@@ -6,8 +6,8 @@ Portfolio will include:
 * Code Louisville Website redesign: Case Study and Prototype 
 * Photography Sales website: Case Study, Prototype and website code
 
-Overview: Portfolio Site design and code execution will help job recruiters can
-1) quickly parse the included projects and info about me, 
-2) immdeiately have a positive feeling about my qualifications, and
-3) easily take the next steps to hire me.
+Goal: Portfolio Website will meet highest standards for semantic HTML, lean CSS declarations and Accessibility (WCAG, Aria, etc.). The site will allow job recruiters to...
+1) quickly see and interact with the projects and my bio, 
+2) immdeiately get a positive feeling about my qualifications, and
+3) easily take the next steps in the hiring process with me.
 
