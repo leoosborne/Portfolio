@@ -1,11 +1,12 @@
 # Portfolio
 Portfolio Project for Q1 '23
-Portfolio will include: 
+Portfolio projects will likely include: 
 
-* StructuRight portal MVP redesign: Case Study and Prototype (desktop only)
-* Juniata.edu case study: Project Overview, UX design, Prototype and link to site
-* Code Louisville Website redesign: Case Study and Prototype 
-* Photography Sales website: Case Study, Prototype and website code
+* StructuRight Portal MVP redesign: Case Study and clickable Prototype (desktop only)
+* StructuRight iOS app design: Case Study, and clickable Prototype
+* Custom Design System for StructuRight
+* Juniata.edu case study: Cast Study, clickable Prototype and link to site
+
 
 Project Brief: Since I have been working in a startup for the last four years, I need a to refresh my Portfolio. This simple and elegantly designed website will highlight my front-end dev and UX design skills while meeting the highest standards for semantic HTML and Accessibility. The site will allow users to...
 
