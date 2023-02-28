@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Leo Osborne Portfolio | Home</title>
+    <title>Mobile | Home</title>
     <style>
         html {
-        box-sizing: border-box;
+       /*  box-sizing: border-box; */
         }
 
         *, *::before, *::after {
-        box-sizing: inherit;
+        /* box-sizing: inherit; */
         margin: 0;
         padding: 0;
         }
@@ -22,9 +22,9 @@
         }
 
         nav {
+        position: sticky;
         width: 100%;
         background-color: rgb(255, 255, 255);
-        padding-left: 1rem;
         padding-right: 1rem;
         }
 
@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 1.5rem;
+            padding-top: 0.625rem;
             padding-bottom: 0.2rem;
             box-shadow: 0 3px 4px 0 rgba(21, 39, 55, 0.3);
         }
@@ -41,14 +41,21 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding-left: .5rem;
+        padding-left: 1rem;
         padding-bottom: .188rem;
-        height: ;
+        }
+
+        .logo img {
+        width: 219.615px;
+        
         }
 
         .nav-links {
         list-style: none;
         display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: .625rem;
         }
 
         .nav-item a {
@@ -70,33 +77,37 @@
         color: darkgreen;
         }
 
-        .logo img {
-        width: 175px;
-        vertical-align: middle;
+        .hamburger {
+            height: 2.25rem;
+            padding-bottom: 1rem;
         }
+
         .heading > h1, 
         .heading > p {
-            padding-left: 3.875rem;
+            padding-left: 1rem;
         }
 
         .heading > h1 {
             font-style: normal;
             font-weight: 600;
-            font-size: 48px;
-            line-height: 60px;
+            font-size: 3rem;
+            line-height: 3.75rem;
         }
     </style>
 </head>
 <header>
     <nav class="navbar">
         <a href="" class="logo">
-            <img src="img/leoOsborne-lion-head-logo-2023-150ppi.png" alt="Leo Oborne logo">
+            <img src="img/leoOsborne-lion-head-logo-2023-2.svg" alt="Leo Oborne logo">
         </a>
         <ul class="nav-links">
-            <li class="nav-item"><a href="">Work</a></li>
+          <!--   <li class="nav-item"><a href="">Work</a></li>
             <li class="nav-item"><a href="">About</a></li>
-            <li class="nav-item"><a href="">Contact</a></li>
-        </ul>
+            <li class="nav-item"><a href="">Contact</a></li>-->
+            <li class="nav-item "><a href="" class="hamburger">
+                <img src="img/hamburger.png" alt="Hamburger Navigation">
+            </a></li>
+        </ul> 
     </nav>
 </header>
 <body>
