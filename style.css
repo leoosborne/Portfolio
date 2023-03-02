@@ -1,14 +1,14 @@
 :root {
-    --clr-primary-500/base: hsl(208, 27%, 58%);
+    --clr-primary-500-base: hsl(208, 27%, 58%);
     --clr-primary-850: hsl(208, 45%, 15%);
     
-    --clr-secondary-500/base: hsl(37, 58%, 52%);
+    --clr-secondary-500-base: hsl(37, 58%, 52%);
     --clr-secondary-100: hsl(37, 58%, 91%);
 
     --clr-neutral-100: white; 
     --clr-neutral-300: hsl(227, 16%, 80%);
     --clr-neutral-400: hsl(227, 13%, 71%) ;
-    --clr-neutral-500/base: hsl(227, 13%, 64%);
+    --clr-neutral-500-base: hsl(227, 13%, 64%);
     --clr-neutral-900: ;
 }
 
