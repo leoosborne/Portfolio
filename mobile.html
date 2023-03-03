@@ -83,6 +83,68 @@
             font-size: 3rem;
             line-height: 3.75rem;
         }
+
+        /****************
+        Case-Study Cards
+        ****************/
+
+        .case-study {
+            margin: 1rem;
+            background-color: rgb(230, 224, 224);
+            border-radius: 1rem;
+            box-shadow: 3px 4px 4px #15273733;
+        }
+
+        .case-study img {
+            overflow: hidden;
+            border-radius: 1rem 1rem 0 0;
+            height: 20rem;
+            object-fit: cover;
+            object-position: 35%;
+            background-color: rgb(230, 224, 224);
+        }
+
+        .case-study h3 {
+            padding: 1.75rem 0 0 1.75rem;
+            font-size: 1.75rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+        }
+        
+        .case-study p {
+            padding: 0 1.75rem;
+        }
+/* 
+        .case-study {
+            --w: 450px
+            --c: (100vw - var(--w));
+
+            max-width: 500px;
+            background: #fff;
+            margin: 10px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0 20px 0 clamp(20px,var(--c)*1000, 180px);
+            box-sizing: border-box;
+            box-shadow: 1px 2px 5px #0005;
+            position: relative;
+        }
+
+        .case-study img {
+            position:absolute;
+            top:clamp(0px,var(--c)*-1000,10px);
+            left:clamp(0px,var(--c)*-1000,20px);
+            width:clamp(50px,var(--c)*1000,150px);
+            height:clamp(50px,var(--c)*1000,100%);
+            border-radius:clamp(0px,var(--c)*-1000,50px);
+            object-fit:cover;
+            object-position:top;
+        }
+
+        .case-study h3 {
+            margin:20px 0 10px clamp(0px,var(--c)*-1000,70px);
+        }
+ */
     </style>
 </head>
 <header>
@@ -102,15 +164,30 @@
 </header>
 <body>
     <main>
-        <heading class="heading">
+        <header class="heading">
             <h1>Portfolio</h1>
             <p>A brief tweet-sized blurb about my skills and experience.</p>
-        </heading>
+        </header>
         <section>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <header>
+                <H2>Work</H2>
+            </header>
+            <article class="case-study">
+                <img src="img/DSC04685-8.jpg" alt="placeholder image for case-study-1"></img>
+                <h3>MVP Design</h3>
+                <p>
+                Molestias fuga, suscipit quam ullam incidunt nihil excepturi eaque accusamus natus reiciendis officia, rem delectus optio vero harum dignissimos nisi sequi. Corporis, magni voluptatibus maxime vel voluptatum hic earum ipsa.
+                Impedit corrupti officiis laudantium eaque harum quae ducimus amet architecto asperiores, modi voluptatibus dolores. Impedit ratione aperiam quia omnis aliquam quaerat sed sequi eius cupiditate in adipisci beatae, placeat cum?
+                </p>
+            </article>
+            <article class="case-study">
+                <img src="img/DSC04685-8.jpg" alt="placeholder image for case-study-1"></img>
+                <h3>MVP Design</h3>
+                <p>
+                Molestias fuga, suscipit quam ullam incidunt nihil excepturi eaque accusamus natus reiciendis officia, rem delectus optio vero harum dignissimos nisi sequi. Corporis, magni voluptatibus maxime vel voluptatum hic earum ipsa.
+                Impedit corrupti officiis laudantium eaque harum quae ducimus amet architecto asperiores, modi voluptatibus dolores. Impedit ratione aperiam quia omnis aliquam quaerat sed sequi eius cupiditate in adipisci beatae, placeat cum?
+                </p>
+            </article>    
         </section>
     </main>
     
