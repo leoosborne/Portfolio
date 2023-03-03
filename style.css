@@ -1,15 +1,43 @@
 :root {
-    --clr-primary-500-base: hsl(208, 27%, 58%);
+    --clr-primary-500: hsl(208, 27%, 58%);
     --clr-primary-850: hsl(208, 45%, 15%);
     
-    --clr-secondary-500-base: hsl(37, 58%, 52%);
+    --clr-secondary-500: hsl(37, 58%, 52%);
     --clr-secondary-100: hsl(37, 58%, 91%);
 
     --clr-neutral-100: hsl(0, 0%, 100%); 
     --clr-neutral-300: hsl(227, 16%, 80%);
     --clr-neutral-400: hsl(227, 13%, 71%) ;
-    --clr-neutral-500-base: hsl(227, 13%, 64%);
-    --clr-neutral-900: ;
+    --clr-neutral-500: hsl(227, 13%, 64%);
+    --clr-neutral-900: hsl(0 0% 0%);
+
+    --font-family-primary: font-family: 'Plus Jakarta Sans', sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    --fs-100: 
+    --fs-200: .875rem;/*14px*/
+    --fs-300: 1rem;/*16px*/
+    --fs-400: 1.25rem;/*18px*/
+    --fs-500: 1.5rem;/*24px*/
+    --fs-600: 2.125rem;/*34px*/
+    --fs-700: 3rem;/*48px*/
+    --fs-800:
+    --fs-900:
+
+
+    --fs-h1: var(--fs-700);
+    --fs-h2: var(--fs-600);
+    --fs-h3: var(--fs-500);
+    --fs-btn-lg: var(--fs-400);
+    --fs-body: var(--fs-300);
+    --fs-pill: var(--fs-200);
+   
 }
 
 /*https://andy-bell.co.uk/a-modern-css-reset/*/
@@ -79,11 +107,11 @@ h6 {
     padding-inline-start: 0;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them*/
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
    scroll-behavior: auto;
-  }
+  } 
   
   *,
   *::before,
@@ -94,3 +122,46 @@ h6 {
     scroll-behavior: auto !important;
   }
 }
+
+/****************
+Utility Classes
+****************/
+
+.text-primary-500 { color: var(--clr-primary-500); }
+.text-primary-850 { color: var(--clr-primary-850); }
+.text-secondary-500 { color: var(--clr-secondary-500); }
+.text-secondary-100 { color: var(--clr-secondary-100); }
+.text-neutral-100 { color: var(--clr-neutral-100); }
+.text-neutral-300 { color: var(--clr-neutral-300); }
+.text-neutral-400 { color: var(--clr-neutral-400); }
+.text-neutral-500 { color: var(--clr-neutral-500); }
+.text-neutral-900 { color: var(---clr-neutral-900); }
+
+.bg-primary-500 { background-color: var(--clr-primary-500); }
+.bg-primary-850 { background-color: var(--clr-primary-850); }
+.bg-secondary-500 { background-color: var(--clr-secondary-500); }
+.bg-secondary-100 { background-color: var(--clr-secondary-100); }
+.bg-neutral-100 { background-color: var(--clr-neutral-100); }
+.bg-neutral-300 { background-color: var(--clr-neutral-300); }
+.bg-neutral-400 { background-color: var(--clr-neutral-400); }
+.bg-neutral-500 { background-color: var(--clr-neutral-500); }
+.bg-neutral-900 { background-color: var(---clr-neutral-900); }
+
+.fw-bold { font-weight: var(--fw-bold); }
+.fw-semi-bold { font-weight: var(--fw-semi-bold); }
+.fw-regular { font-weight: var(--fw-regular); }
+
+.fs-h1 { font-size: var(--fs-h1); }
+.fs-h2 { font-size: var(--fs-h2); }
+.fs-h3 { font-size: var(--fs-h2); }
+.fs-btn-lg { font-size: var(--fs-btn-lg); }
+.fs-body { font-size: var(--fs-body); }
+.fs-pill { font-size: var(--fs-); }
+
+
+.fs-200 { font-size: var(--f3-200); }
+.fs-300 { font-size: var(--f3-300); }
+.fs-400 { font-size: var(--f3-400); }
+.fs-500 { font-size: var(--f3-500); }
+.fs-600 { font-size: var(--f3-600); }
+.fs-700 { font-size: var(--f3-700); }

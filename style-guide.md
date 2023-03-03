@@ -26,14 +26,20 @@ Almost Medium Grey ("small-blue" shadow): hsl(227, 13%, 71%) Nuetral/400
 
 ## Typography
 
-### Body Copy
+### Font Size | Weight | Line Height | Letter Spacing
 
-- Font size: 16px
+- H1: 48px / 3rem | 600 | 60.5px / 3.781rem | 0
+- H2: 34px / 2.125rem | 600 | 42.8px / 2.675rem | 0
+- H3: 24px / 1.5rem | 600 | 24px / 1.5rem | 28px / 1.75rem | 0
+- Button-Large: 18px / 1.25rem | 600 | 28px / 1.75rem | .55px / .034rem
+- Body: 16px / 1rem | 400 | 20px / 1.25rem | 0
+- Pill: 14px / .875rem | 600 | 21px / 1.313rem | .4px / .025rem
 
 ### Font
 
-- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
-- Weights: 400, 600, 700
+- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans-Serif) 
+
+- Weights: 400, 600, 700 (note: might get rid of 700 before shipping)
 
 ## Icons
 
