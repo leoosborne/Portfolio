@@ -11,20 +11,19 @@
         font-family: "Plus Jakarta Sans", sans-serif;
         color: hsl(208, 45%, 15%);
         }
-
+        /****************
+        Top Navbar
+        ****************/
         nav {
         position: sticky;
         width: 100%;
         background-color: rgb(255, 255, 255);
-        padding-right: 1rem;
         }
 
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 0.625rem;
-            padding-bottom: 0.2rem;
             box-shadow: 0 3px 4px 0 rgba(21, 39, 55, 0.3);
         }
 
@@ -32,12 +31,10 @@
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            /*padding-left: 1rem;
-            padding-bottom: .188rem;*/
         }
 
         .logo img {
-            width: 219.615px;
+            width: 13.75rem;
         }
 
         .nav-links {
@@ -45,11 +42,9 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            padding-right: .625rem;
         }
 
         .nav-item a {
-            padding: .625rem;
             text-decoration: none;
             color: #152737;
             font-size: 1.125rem;
@@ -67,21 +62,28 @@
             color: darkgreen;
         }
 
-        .hamburger {
-            height: 2.25rem;
-            padding-bottom: 1rem;
-        }
+        /****************
+        Typography
+        ****************/
 
         .heading > h1, 
+        .heading > h2,
         .heading > p {
             padding-left: 1rem;
         }
 
-        .heading > h1 {
+        .heading > h1, 
+        .heading > h2 {
             font-style: normal;
             font-weight: 600;
             font-size: 3rem;
             line-height: 3.75rem;
+        }
+
+        .heading > h2 {
+            font-size: 2.25rem;
+            padding-top: 1rem;
+            line-height: auto;
         }
 
         /****************
@@ -89,10 +91,10 @@
         ****************/
 
         .case-study {
-            margin: 1rem;
-            background-color: rgb(230, 224, 224);
+            margin: 0 1rem 1.5rem;
+            background-color: hsl(0, 0%, 100%);
             border-radius: 1rem;
-            box-shadow: 3px 4px 4px #15273733;
+            box-shadow: 1px 4px 4px hsl(208, 45%, 15%, .33);
         }
 
         .case-study img {
@@ -101,50 +103,21 @@
             height: 20rem;
             object-fit: cover;
             object-position: 35%;
-            background-color: rgb(230, 224, 224);
+            background-color: hsl(0, 0%, 100%);
+            filter: drop-shadow(0.5px 0px 1.5px hsl(208, 45%, 15%));
         }
 
         .case-study h3 {
-            padding: 1.75rem 0 0 1.75rem;
+            padding: 1.75rem 0 .5rem 1.75rem;
             font-size: 1.75rem;
             line-height: 1.75rem;
             font-weight: 600;
         }
         
         .case-study p {
-            padding: 0 1.75rem;
-        }
-/* 
-        .case-study {
-            --w: 450px
-            --c: (100vw - var(--w));
-
-            max-width: 500px;
-            background: #fff;
-            margin: 10px auto;
-            border-radius: 10px;
-            overflow: hidden;
-            padding: 0 20px 0 clamp(20px,var(--c)*1000, 180px);
-            box-sizing: border-box;
-            box-shadow: 1px 2px 5px #0005;
-            position: relative;
+            padding: 0 1.75rem 1.75rem;
         }
 
-        .case-study img {
-            position:absolute;
-            top:clamp(0px,var(--c)*-1000,10px);
-            left:clamp(0px,var(--c)*-1000,20px);
-            width:clamp(50px,var(--c)*1000,150px);
-            height:clamp(50px,var(--c)*1000,100%);
-            border-radius:clamp(0px,var(--c)*-1000,50px);
-            object-fit:cover;
-            object-position:top;
-        }
-
-        .case-study h3 {
-            margin:20px 0 10px clamp(0px,var(--c)*-1000,70px);
-        }
- */
     </style>
 </head>
 <header>
@@ -169,7 +142,7 @@
             <p>A brief tweet-sized blurb about my skills and experience.</p>
         </header>
         <section>
-            <header>
+            <header class="heading">
                 <H2>Work</H2>
             </header>
             <article class="case-study">

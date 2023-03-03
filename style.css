@@ -5,7 +5,7 @@
     --clr-secondary-500-base: hsl(37, 58%, 52%);
     --clr-secondary-100: hsl(37, 58%, 91%);
 
-    --clr-neutral-100: white; 
+    --clr-neutral-100: hsl(0, 0%, 100%); 
     --clr-neutral-300: hsl(227, 16%, 80%);
     --clr-neutral-400: hsl(227, 13%, 71%) ;
     --clr-neutral-500-base: hsl(227, 13%, 64%);
@@ -65,7 +65,13 @@ svg {
 }
 
 /*Reset the default ul margins for user agents*/
-ul {
+ul,
+h1,
+h2,
+h3,
+h4,
+h5, 
+h6 {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
