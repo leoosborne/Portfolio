@@ -11,7 +11,7 @@
     --clr-neutral-500: hsl(227, 13%, 64%);
     --clr-neutral-900: hsl(0 0% 0%);
 
-    --font-family-primary: font-family: 'Plus Jakarta Sans', sans-serif;
+    --ff-primary: 'Plus Jakarta Sans', 'Open Sans', sans-serif;
 
     --ff-body: var(--ff-primary);
     --ff-heading: var(--ff-primary);
@@ -79,10 +79,11 @@ body {
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
+/* A elements that don't have a class get default styles 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration-skip-link: auto;
 }
+*/
 
 /* Make images easier to work with */
 img,
@@ -90,21 +91,6 @@ picture,
 svg {
   max-width: 100%;
   display: block;
-}
-
-/*Reset the default ul margins for user agents*/
-ul,
-h1,
-h2,
-h3,
-h4,
-h5, 
-h6 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them*/
@@ -122,6 +108,154 @@ h6 {
     scroll-behavior: auto !important;
   }
 }
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(208, 45%, 15%);
+  }
+/****************
+Top Navbar
+****************/
+nav {
+position: sticky;
+width: 100%;
+background-color: hsl(0, 0%, 100%);
+padding: 0 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    box-shadow: 0 .188rem .25rem 0 rgba(21, 39, 55, 0.3);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.logo img {
+    width: 13.75rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item a {
+    padding: .625rem;
+    text-decoration: none;
+    color: #152737;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: darkgreen;
+}
+
+/****************
+Typography
+****************/
+
+.heading > h1, 
+.heading > h2,
+.heading > p {
+    padding-left: 1rem;
+}
+
+.heading > h1, 
+.heading > h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.75rem;
+}
+
+.heading > h2 {
+    font-size: 2.25rem;
+    padding-top: 1rem;
+    line-height: auto;
+}
+
+/****************
+Case-Study Cards
+****************/
+
+.case-study {
+    margin: 0 1rem 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    box-shadow: .063rem .25rem .25rem hsl(208, 45%, 15%, .33);
+}
+
+.case-study img {
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 35%;
+    background-color: hsl(0, 0%, 100%);
+    filter: drop-shadow(0.031rem 0 .084rem hsl(208, 45%, 15%));
+}
+
+.case-study h3 {
+    padding: 1.75rem 0 .5rem 1.75rem;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.case-study-text {
+    padding: 0 1.75rem 1.75rem;
+    margin: 1.5rem 0;
+}
+
+
+/****************
+Skill Pills
+****************/
+
+.pill-box {
+  display: flex;
+  gap: .25rem;
+  margin-left: 1.5rem;
+} 
+
+/*.pill-tag {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  padding: .188rem 1rem;
+}*/
+
+.pill {
+  border-radius: 1rem;
+  padding: .188rem 1rem;
+}
+
+
+
+
+
 
 /****************
 Utility Classes
@@ -151,12 +285,12 @@ Utility Classes
 .fw-semi-bold { font-weight: var(--fw-semi-bold); }
 .fw-regular { font-weight: var(--fw-regular); }
 
-.fs-h1 { font-size: var(--fs-h1); }
-.fs-h2 { font-size: var(--fs-h2); }
-.fs-h3 { font-size: var(--fs-h2); }
-.fs-btn-lg { font-size: var(--fs-btn-lg); }
-.fs-body { font-size: var(--fs-body); }
-.fs-pill { font-size: var(--fs-); }
+.fs-h1 { font-size: var(--fs-700); }
+.fs-h2 { font-size: var(--fs-600); }
+.fs-h3 { font-size: var(--fs-500); }
+.fs-btn-lg { font-size: var(--fs-400); }
+.fs-body { font-size: var(--fs-300); }
+.fs-pill { font-size: var(--fs-200); }
 
 
 .fs-200 { font-size: var(--f3-200); }
@@ -165,3 +299,5 @@ Utility Classes
 .fs-500 { font-size: var(--f3-500); }
 .fs-600 { font-size: var(--f3-600); }
 .fs-700 { font-size: var(--f3-700); }
+
+
