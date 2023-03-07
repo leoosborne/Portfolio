@@ -116,12 +116,13 @@ body {
 /****************
 Top Navbar
 ****************/
-nav {
+
+/* nav {
 position: sticky;
 width: 100%;
 background-color: hsl(0, 0%, 100%);
 padding: 0 1rem;
-}
+} */
 
 .navbar {
     display: flex;
@@ -213,16 +214,19 @@ Case-Study Cards
     filter: drop-shadow(0.031rem 0 .084rem hsl(208, 45%, 15%));
 }
 
+.case-study-info-wrap {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .case-study h3 {
-    padding: 1.75rem 0 .5rem 1.75rem;
-    font-size: 1.75rem;
+    padding: 1.5rem 1.5rem .25rem 1.55rem;
     line-height: 1.75rem;
-    font-weight: 600;
 }
 
 .case-study-text {
-    padding: 0 1.75rem 1.75rem;
-    margin: 1.5rem 0;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 
@@ -232,20 +236,10 @@ Skill Pills
 
 .pill-box {
   display: flex;
+  flex-wrap: wrap;
   gap: .25rem;
-  margin-left: 1.5rem;
+  margin: 0 1.5rem;
 } 
-
-/*.pill-tag {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  padding: .188rem 1rem;
-}*/
 
 .pill {
   border-radius: 1rem;
@@ -253,6 +247,29 @@ Skill Pills
 }
 
 
+/****************
+Buttons
+****************/
+
+/**********RESET********/
+button {
+  border-width: 0;
+  border-style: none;
+
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  padding: .75rem 2.313rem;
+  border-radius: .375rem;
+  text-transform: uppercase;
+  margin: 24px;
+}
 
 
 
