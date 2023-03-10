@@ -1,100 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Leo Osborne Portfolio | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kevin.css">
     <style>
-
         body {
             font-family: "Plus Jakarta Sans", sans-serif;
             color: hsl(208, 45%, 15%);
         }
-
-        nav {
-            width: 100%;
-            background-color: rgb(255, 255, 255);
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 1.5rem;
-            padding-bottom: 0.2rem;
-            box-shadow: 0 3px 4px 0 rgba(21, 39, 55, 0.3);
-        }
-
-        .logo {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            /*padding-left: 1rem;
-            padding-bottom: .188rem;*/
-        }
-
-        .logo img {
-        width: 219.615px;
-        }
-
-        .nav-links {
-        list-style: none;
-        display: flex;
-        }
-
-        .nav-item a {
-        padding: .625rem;
-        text-decoration: none;
-        color: #152737;
-        font-size: 1.125rem;
-        font-weight: 500;
-        line-height: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.03rem;
-        }
-
-        .nav-item:hover {
-        background-color: white;
-        }
-
-        .nav-item:hover a {
-        color: darkgreen;
-        }
-
-        .logo img {
-        width: 175px;
-        vertical-align: middle;
-        }
-        .heading > h1, 
-        .heading > p {
-            padding-left: 3.875rem;
-        }
-
-        .heading > h1 {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 48px;
-            line-height: 60px;
-        }
     </style>
 </head>
-<header>
-    <nav class="navbar">
-        <a href="" class="logo">
-            <img src="img/leoOsborne-lion-head-logo-2023-2.svg" alt="Leo Osborne logo">
-        </a>
-        <ul class="nav-links">
-            <li class="nav-item"><a href="">Work</a></li>
-            <li class="nav-item"><a href="">About</a></li>
-            <li class="nav-item"><a href="">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+
 <body>
+    <header > <!--class="primary-header"-->
+        <div ><!--class="container"-->
+           <!--  <div nav-wrapper>-->
+                <a href="" class="logo"><img src="img/leocast-logo.svg" alt="Leo Osborne's logo"></a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <img class="icon-hamburger" src="img/icon-hamburger.png" alt="" aria-hidden="true">
+                    <img class="icon-close" src="img/icon-close.png" alt="" aria-hidden="true">
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-navigation" id="primary-navigation">
+                    <ul aria-label="Primary" role="list" class="nav-list">
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            <!--</div>-->
+        </div>
+    </header>
+
     <main>
         <heading class="heading">
             <h1>Portfolio</h1>
@@ -107,6 +49,7 @@
             <article></article>
         </section>
     </main>
-    
+
 </body>
+
 </html>

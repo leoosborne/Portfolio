@@ -18,18 +18,23 @@
         }
     </style>
 </head>
-<header class="container">
+<header>
     <nav class="navbar">
         <a href="#" class="logo">
             <img src="img/leocast-logo.svg" alt="Leo Osborne's logo"> 
         </a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-hamburger" src="img/icon-hamburger.png" alt="" aria-hidden="true">
+            <img class="icon-close" src="img/icon-close.png" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+        </button>
+       <!-- <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+            <img src="img/menu.png" alt="">menu
+        </button>-->
         <ul role="list" class="nav-links text-primary-850 fw-semi-bold fs-btn-lg">
             <li class="nav-item"><a href="">Work</a></li>
             <li class="nav-item"><a href="">About</a></li>
             <li class="nav-item"><a href="">Contact</a></li>
-            <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
-                <img src="img/menu.png" alt="">menu
-            </button>
         </ul>
     </nav>
 </header>
