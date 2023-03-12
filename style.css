@@ -1,3 +1,4 @@
+
 :root {
     --clr-primary-500: hsl(208, 27%, 58%);
     --clr-primary-850: hsl(208, 45%, 15%);
@@ -39,7 +40,7 @@
     --fs-pill: var(--fs-200);
    
 }
-
+*/
 /*https://andy-bell.co.uk/a-modern-css-reset/*/
 
 /* Box sizing rules */
@@ -75,8 +76,10 @@ body {
 
 /* Set core body defaults */
 body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(208, 45%, 15%);
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.5; /*CHECK THE SPACING! REMOVE THIS RULE IF NOT NEEDED*/
 }
 
 /* A elements that don't have a class get default styles 
@@ -109,10 +112,7 @@ svg {
   }
 }
 
-body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: hsl(208, 45%, 15%);
-  }
+
 /****************
 Top Navbar
 ****************/
@@ -140,6 +140,14 @@ padding: 0 1rem;
 
 .logo img {
     width: 13.75rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: var(--fw-semi-bold);
 }
 
 .nav-links {
@@ -277,6 +285,18 @@ button {
 /****************
 Utility Classes
 ****************/
+  
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
 
 .text-primary-500 { color: var(--clr-primary-500); }
 .text-primary-850 { color: var(--clr-primary-850); }
@@ -317,4 +337,62 @@ Utility Classes
 .fs-600 { font-size: var(--f3-600); }
 .fs-700 { font-size: var(--f3-700); }
 
+/**********************
+Mobile Styles (< 480px)
+**********************/
 
+@media (max-width: 550px) {
+  /*  .primary-navigation {
+     display: none;
+     position: fixed;
+     padding: var(--size-700);
+     inset: 7rem var(--size-400) auto;
+     max-width: 25rem;
+     margin-left: auto;
+     background: var(--clr-neutral-100);
+     border-radius: var(--size-100);
+     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
+   } */
+ 
+   .primary-header[data-overlay]::before {
+     content: "";
+     position: fixed;
+     inset: 0;
+     /* height: 100vh; */
+     background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+   }
+ 
+   /* .nav-list {
+     display: none;
+   } */
+
+
+   /*move this to the 481-768px @media query*/
+   /* .nav-list {
+     display: grid;
+     gap: var(--size-400);
+     text-align: center;
+     font-weight: var(--fw-bold);
+   } */
+ 
+   /* .primary-navigation[data-visible] {
+     display: block;
+   } */
+ 
+   .mobile-nav-toggle {
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     padding: 0;
+   }
+ 
+   .mobile-nav-toggle .icon-close,
+   .nav-list {
+     display: none;
+   }
+ }
+ 
