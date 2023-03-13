@@ -82,11 +82,11 @@ body {
   line-height: 1.5; /*CHECK THE SPACING! REMOVE THIS RULE IF NOT NEEDED*/
 }
 
-/* A elements that don't have a class get default styles 
-a:not([class]) {
+/* A elements that don't have a class get default styles */
+/* a:not([class]) {
   text-decoration-skip-link: auto;
 }
-*/
+ */
 
 /* Make images easier to work with */
 img,
@@ -117,13 +117,6 @@ svg {
 Top Navbar
 ****************/
 
-/* nav {
-position: sticky;
-width: 100%;
-background-color: hsl(0, 0%, 100%);
-padding: 0 1rem;
-} */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -140,6 +133,10 @@ padding: 0 1rem;
 
 .logo img {
     width: 13.75rem;
+}
+
+.nav-list[data-visible]{
+  display: block;
 }
 
 .nav-list {
@@ -175,6 +172,11 @@ padding: 0 1rem;
 
 .nav-item:hover a {
     color: darkgreen;
+}
+
+.mobile-nav-toggle .icon-close,
+.mobile-nav-toggle .icon-hamburger {
+  display: none;
 }
 
 /****************
@@ -274,7 +276,7 @@ button {
 
 .btn-primary {
   padding: .75rem 2.313rem;
-  border-radius: .375rem;
+  border-radius: .75rem;
   text-transform: uppercase;
   margin: 24px;
 }
@@ -354,14 +356,14 @@ Mobile Styles (< 480px)
      box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
    } */
  
-   .primary-header[data-overlay]::before {
+ /*  .primary-header[data-overlay]::before {
      content: "";
      position: fixed;
      inset: 0;
-     /* height: 100vh; */
+     /* height: 100vh; 
      background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
    }
- 
+ */
    /* .nav-list {
      display: none;
    } */
@@ -386,13 +388,15 @@ Mobile Styles (< 480px)
      justify-content: flex-end;
      cursor: pointer;
      background: transparent;
-     border: 0;
-     padding: 0;
    }
  
    .mobile-nav-toggle .icon-close,
    .nav-list {
      display: none;
+   }
+
+   .mobile-nav-toggle .icon-hamburger {
+    display: block;
    }
  }
  

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Leo Osborne Portfolio | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="kevin.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="kevin-4.css">
     <style>
         body {
             font-family: "Plus Jakarta Sans", sans-serif;
@@ -17,39 +17,139 @@
 </head>
 
 <body>
-    <header > <!--class="primary-header"-->
-        <div ><!--class="container"-->
-           <!--  <div nav-wrapper>-->
+    <header class="primary-header"> 
+        <div class="container">
+           <div class="nav-wrapper">
                 <a href="" class="logo"><img src="img/leocast-logo.svg" alt="Leo Osborne's logo"></a>
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                     <img class="icon-hamburger" src="img/icon-hamburger.png" alt="" aria-hidden="true">
                     <img class="icon-close" src="img/icon-close.png" alt="" aria-hidden="true">
                     <span class="visually-hidden">Menu</span>
                 </button>
-                <nav class="primary-navigation" id="primary-navigation">
+                <nav id="primary-navigation" class="primary-navigation bg-primary-500 ">
                     <ul aria-label="Primary" role="list" class="nav-list">
                         <li><a href="#">Work</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-            <!--</div>-->
+            </div>
         </div>
     </header>
-
     <main>
-        <heading class="heading">
-            <h1>Portfolio</h1>
-            <p>A brief tweet-sized blurb about my skills and experience.</p>
-        </heading>
         <section>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <header class="heading">
+                <h1 class="fs-h1 fw-semi-bold text-primary-850">Portfolio</h1>
+                <p class="fs-body">
+                    A brief tweet-sized blurb about my skills and experience.
+                </p>
+            </header>
+            <div class="container ">
+                <header class="heading">
+                    <H2 class="fs-h2 fw-semi-bold text-primary-850">Work</H2>
+                </header>
+                <article class="case-study">
+                    <img src="img/DSC04685-8.jpg" alt="placeholder image for case-study-1"></img>
+                    <div class="case-study-info-wrap">
+                        <h3 class="fs-h3 fw-semi-bold">MVP Redesign</h3>
+                        <div class="pill-box">
+                            <p class="pill fs-pill bg-secondary-100">Project Management</p>  
+                            <div>
+                                <p class="pill fs-pill bg-secondary-100">UX/UI Design</p>
+                            </div>
+                        </div>
+                        <p class="case-study-text fs-body fw-regular">
+                            User Research and Redesign of web portal MVP (Minimum Viable Product) for StructuRight® Remote Building Monitoring Systems
+                        </p>
+                        <div class="btn-box">
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="case-study">
+                    <img src="img/DSC04341-3.jpg" alt="placeholder image for case-study-1"></img>
+                    <div class="case-study-info-wrap">
+                        <h3 class="fs-h3 fw-semi-bold">App Design</h3>
+                        <div class="pill-box">
+                                <p class="pill fs-pill bg-secondary-100">Project Management</p>  
+                            <div>
+                                <p class="pill fs-pill bg-secondary-100">UX/UI Design</p>
+                            </div>
+                        </div>
+                        <p class="case-study-text fs-body fw-regular">
+                            Design of iOS App MVP (Minimum Viable Product) for StructuRight® Remote Building Monitoring Systems
+                        </p>
+                        <div class="btn-box">
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="case-study">
+                    <img src="img/DSC04548-8.jpg" alt="placeholder image for case-study-1"></img>
+                    <div class="case-study-info-wrap">
+                        <h3 class="fs-h3 fw-semi-bold">Design System</h3>
+                        <div class="pill-box">
+                                <p class="pill fs-pill bg-secondary-100">Project Management</p>   
+                            <div>
+                                <p class="pill fs-pill bg-secondary-100">UX/UI Design</p>
+                            </div>
+                        </div>
+                        <p class="case-study-text fs-body fw-regular">
+                            Custom Figma Design System for StructuRight®
+                        </p>
+                        <div class="btn-box">
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="case-study">
+                    <img src="img/DSC04382-2.jpg" alt="placeholder image for case-study-1"></img>
+                    <div class="case-study-info-wrap">
+                        <h3 class="fs-h3 fw-semi-bold">Higher Education CMS</h3>
+                        <div class="pill-box">
+                                <p class="pill fs-pill bg-secondary-100">Project Management</p>
+                            <div>
+                                <p class="pill fs-pill bg-secondary-100">Web Development</p>
+                            </div>    
+                            <div>
+                                <p class="pill fs-pill bg-secondary-100">UX/UI Design</p>
+                            </div>
+                        </div>
+                        <p class="case-study-text fs-body fw-regular">
+                            User Experience Research, Web Development and Backend Architecture Build-Out of Juniata College’s Content Management System 
+                        </p>
+                        <div class="btn-box">
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="container bg-neutral-300">
+                <h2 class="fs-h2 fw-semi-bold text-primary-850">About</h2>
+                <div>
+                    <h3 class="fs-h3 fw-semi-bold text-primary-850">Bio</h3>
+                    <p> Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus...  <span class="fw-semi-bold">MORE</span></p>
+                    </p>
+                    <h3 class="fs-h3 fw-semi-bold text-primary-850">Resume</h3>
+                    <p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc interdum, ac aliquet odio mattis. Class aptent scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                        Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus... <span class="fw-semi-bold">MORE</span></p>
+                    <p class="fw-bold"> <strong>Resume Link</strong></p>
+                </div>
+                <div class="container bg-neutral-400">
+                    <h2 class="fs-h2 fw-semi-bold text-primary-850">Contact</h2>
+                    <div>
+                        <p> Rorem ipsum dolor sit amet, consectetur adipiscing elit. scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                            Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum.
+                        </p>  
+                        <p class="fw-bold"> <strong>Email Link</strong></p>
+                        <p class="fw-bold"> <strong>LinkedIn Link</strong></p>
+            </div>
         </section>
     </main>
+    <footer>
 
+    </footer>
+    <script type="module" src="/main.js"></script>
 </body>
 
 </html>
