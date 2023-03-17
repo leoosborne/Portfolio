@@ -384,9 +384,7 @@ Text Blocks
 Media Queries
 ****************/
 
-/******* change this to max-width 480 **** (using 550 now so I can see it in browser) ***/
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 490px) {
     .primary-navigation {
         display: none;
         position: fixed; 
@@ -472,6 +470,16 @@ Media Queries
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
+
+    .lower {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about {
+        padding-right: 1.5rem;
+    }
+
 }
 
 

@@ -38,9 +38,14 @@
     --fs-btn-lg: var(--fs-400);
     --fs-body: var(--fs-300);
     --fs-pill: var(--fs-200);
+
+    --box-shadow: .063rem .25rem .25rem hsl(208, 45%, 15%, .33); 
+    --drop-shadow: drop-shadow(0.031rem 0 .084rem hsl(208, 45%, 15%));
    
 }
-*/
+/****************
+Reset Browser CSS  
+****************/
 /*https://andy-bell.co.uk/a-modern-css-reset/*/
 
 /* Box sizing rules */
@@ -68,7 +73,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
+/* Set core body and html defaults */
 html,
 body {
     height: 100%;
@@ -76,17 +81,15 @@ body {
 
 /* Set core body defaults */
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: hsl(208, 45%, 15%);
   text-rendering: optimizeSpeed;
-  line-height: 1.5; /*CHECK THE SPACING! REMOVE THIS RULE IF NOT NEEDED*/
+  line-height: 1.5; 
 }
-
+ 
 /* A elements that don't have a class get default styles */
-/* a:not([class]) {
+a:not([class]) {
   text-decoration-skip-link: auto;
 }
- */
+
 
 /* Make images easier to work with */
 img,
@@ -122,7 +125,7 @@ Top Navbar
     justify-content: space-between;
     align-items: center;
     padding: .5rem 1rem;
-    box-shadow: 0 .188rem .25rem 0 rgba(21, 39, 55, 0.3);
+    box-shadow: var(--box-shadow); 
 }
 
 .logo {
@@ -139,13 +142,13 @@ Top Navbar
   display: block;
 }
 
-.nav-list {
+/* .nav-list {
   display: flex;
   flex-direction: row; 
   justify-content: flex-end;
   align-items: center;
   font-weight: var(--fw-semi-bold);
-}
+} */
 
 .nav-links {
     list-style: none;
@@ -158,7 +161,7 @@ Top Navbar
 .nav-item a {
     padding: .625rem;
     text-decoration: none;
-    color: #152737;
+    color: var(--text-primary-850);
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5rem;
@@ -170,7 +173,7 @@ Top Navbar
     background-color: white;
 }
 
-.nav-item:hover a {
+.nav-item a:hover {
     color: darkgreen;
 }
 
@@ -211,7 +214,7 @@ Case-Study Cards
     margin: 0 1rem 1.5rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 1rem;
-    box-shadow: .063rem .25rem .25rem hsl(208, 45%, 15%, .33);
+    box-shadow: var(--box-shadow);
 }
 
 .case-study img {
@@ -221,7 +224,7 @@ Case-Study Cards
     object-fit: cover;
     object-position: 35%;
     background-color: hsl(0, 0%, 100%);
-    filter: drop-shadow(0.031rem 0 .084rem hsl(208, 45%, 15%));
+    filter: var(--drop-shadow);
 }
 
 .case-study-info-wrap {
@@ -239,6 +242,22 @@ Case-Study Cards
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
+.horz-case-study {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  box-shadow: var(--box-shadow);
+  border: 0.063rem solid var(--clr-primary-500);
+  border-radius: 1rem;
+}
+
+.horz-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% * (6/12));
+  border-radius: 1rem 0 0 1rem;
+}
 
 /****************
 Skill Pills
@@ -336,6 +355,9 @@ Utility Classes
 .fs-500 { font-size: var(--f3-500); }
 .fs-600 { font-size: var(--f3-600); }
 .fs-700 { font-size: var(--f3-700); }
+
+.box-shadow { box-shadow: var(--box-shadow); }
+.drop-shadow { filter: drop-shadow(0.031rem 0 .084rem hsl(208, 45%, 15%)); } 
 
 /**********************
 Mobile Styles (< 480px)
