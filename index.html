@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Leo Osborne Portfolio | Home</title>
-    
     <link rel="stylesheet" href="style.css">
     <style>
     </style>
@@ -134,16 +133,28 @@
             </div>             
             <aside class="contact">
                 <h2 class="fs-h2 fw-semi-bold text-primary-850"><a id="contact">Contact</a></h2>
-                    <p class="info-text fs-body ff-body fw-regular "> Rorem ipsum dolor sit amet, consectetur adipiscing elit. scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                   <!-- <p class="info-text fs-body ff-body fw-regular "> Rorem ipsum dolor sit amet, consectetur adipiscing elit. scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
                         Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum.
-                    </p>  
+                    </p>  -->
                     <p class="fw-bold info-links"> <strong>Email Link</strong></p>
                     <p class="fw-bold info-links"> <strong>LinkedIn Link</strong></p>
+                    <form class="contact-form">
+                        <input required type="text" autocomplete="off" placeholder="Name" class="contact-form-input" 
+                        />
+                        <input required type="email" autocomplete="off" placeholder="Email" class="contact-form-input" pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9._+-]+\.[a-z]{2,}" id="email" title="Must be a valid email addess"
+                        />
+                        <input required type="text" autocomplete="off" placeholder="Subject" class="contact-form-input" 
+                        />
+                        <textarea required name="Message" placeholder="Message" class="contact-form-input contact-form-textarea"></textarea>
+                        <input type="submit" class="btn form-submit-btn" value="Send Request"
+                        />
+                    </form>
             </aside>
         </section>
     </main>
     <footer class="container">
-        <p>[put some nasty footer columns down here]</p>
+        <p>©LeoCast 2023 | email: <a href=" leo@leocast.com ">leo@leocast.com</a> </p>
+        <p class="credits"><a href="https://unsplash.com/">Images by</a>: Amy Hirschi, Devin Pickell, Kelly Sikkema and Tran Mau Tri Tam</p>
     </footer>
     <script type="module" src="/main.js"></script>
 </body>

@@ -40,7 +40,7 @@
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
-  --fs-100: 
+  --fs-100: .75rem; /*12px*/
   --fs-200: .875rem;/*14px*/
   --fs-300: 1rem;/*16px*/
   --fs-400: 1.25rem;/*18px*/
@@ -104,10 +104,10 @@ body {
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles 
+/* anchor elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-}*/
+}
 
 /* Make images easier to work with */
 img,
@@ -140,7 +140,6 @@ general styling
 
 .container {
   --max-width: 69.375rem;
-  /* --padding: 1rem; */
   width: min(var(--max-width), 100% - (1rem * 2));
   margin-inline: auto;
 }
@@ -256,7 +255,7 @@ Case-Study Cards
 
 .case-study {
   margin: 0 0 1.5rem;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--clr-neutral-100);
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
   border: 0.063rem solid var(--clr-neutral-200);
@@ -270,7 +269,7 @@ Case-Study Cards
   height: 10rem;
   object-fit: cover;
   object-position: 35%;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--clr-neutral-100);
   filter: var(--drop-shadow);
   max-width: 100%;
   height: auto;
@@ -291,25 +290,6 @@ flex-direction: column;
   padding: 1.5rem 1.5rem 0 ;
 }
 
-.horz-case-study {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  box-shadow: var(--box-shadow);
-  border: 0.063rem solid var(--clr-neutral-200);
-  border-style: inset;
-  border-radius: 1rem;
-}
-
-.horz-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% * (6/12));
-  border-radius: 1rem 0 0 1rem;
-}
-
-
 .fs-h3 { font-size: var(--fs-500); }
 
 
@@ -328,8 +308,6 @@ Skill Pills
   border-radius: 1rem;
   padding: .188rem 1rem;
 }
-
-
 
 /****************
 Buttons
@@ -388,6 +366,20 @@ Text Blocks
   padding: .25rem 0;
 }
 
+/****************
+Footer
+****************/
+
+footer > p {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.credits {
+  font-size: var(--fs-100);
+  padding-bottom: 1rem;
+}
 /****************
 Media Queries
 ****************/
@@ -449,10 +441,6 @@ Media Queries
   
   .mobile-nav-toggle[aria-expanded=true] {
     background-image: url(img/icon-close.png);
-  }
-
-  .clicked {
-    color: red;
   }
 
 }
@@ -572,12 +560,12 @@ Utility Classes
 .fs-body { font-size: var(--fs-300); }
 .fs-pill { font-size: var(--fs-200); }
 
-.fs-200 { font-size: var(--f3-200); }
-.fs-300 { font-size: var(--f3-300); }
-.fs-400 { font-size: var(--f3-400); }
-.fs-500 { font-size: var(--f3-500); }
-.fs-600 { font-size: var(--f3-600); }
-.fs-700 { font-size: var(--f3-700); }
+.fs-200 { font-size: var(--fs-200); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-700 { font-size: var(--fs-700); }
 
 .ff-primary { font-family: var(--ff-primary); }
 .ff-heading { font-family: var(--ff-heading); }
