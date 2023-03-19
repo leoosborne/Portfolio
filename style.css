@@ -355,6 +355,14 @@ button {
   margin: 1.5rem;
 }
 
+.btn-primary:hover {
+  box-shadow: 1px 1px 1px #456077;
+}
+
+.btn-primary:active {
+  box-shadow: inset 2px 2px 2px #2C3E4D;
+}
+
 /****************
 Text Blocks
 ****************/
