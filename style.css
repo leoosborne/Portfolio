@@ -144,6 +144,12 @@ general styling
   margin-inline: auto;
 }
 
+.container-about-contact {
+  display: grid;
+  --max-width: 69.375rem;
+  width: min(var(--max-width), 100% - (1rem * 2));
+  margin-inline: auto;
+}
 
 /* button */
 
@@ -342,6 +348,14 @@ button {
 }
 
 /****************
+Contact Form
+****************/
+
+.contact-form {
+  display: none;
+}
+
+/****************
 Text Blocks
 ****************/
 .container > h2 {
@@ -471,20 +485,50 @@ Media Queries
       border-radius: 0 1rem 1rem 0;
   }
 
-  .even-columns {
+  /* .even-columns {
       grid-auto-flow: column;
       grid-auto-columns: 1fr;
-  }
-
-  .lower {
-      display: flex;
-      flex-direction: row;
-  }
+  } */
 
   .about {
-      padding-right: 5rem;
+      padding-right: 1.5rem;
+      text-align: justify;
   }
 
+  .container,
+  .container-about-contact {
+    width: min(var(--max-width), 100% - (2rem * 2));
+  }
+
+  .container-about-contact {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 1rem;
+  }
+
+  /* .lower {  
+    display: flex;
+    align-items: flex-start;
+  } */
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  input,
+  textarea {
+    padding: .5rem 0 .5rem .5rem;
+    margin: .5rem 0 .5rem .5rem;
+  }
+
+  textarea {
+    min-height: 10rem;
+  }
+  
 }
 
 
