@@ -12,16 +12,14 @@
 </head>
 
 <body class="ff-primary text-primary-850 bg-neutral-100">
-    <header class="primary-header"> 
+    <header class="primary-header" role="banner"> 
         <div class="container">
            <div class="nav-wrapper">
                 <a href="" class="logo"><img src="img/leocast-logo.svg" alt="Leo Osborne's logo"></a>
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                    <!--<img class="icon-hamburger" src="img/icon-hamburger.png" alt="" aria-hidden="true">
-                    <img class="icon-close" src="img/icon-close.png" alt="" aria-hidden="true">-->
                     <span class="visually-hidden">Menu</span>
                 </button>
-                <nav id="primary-navigation" class="primary-navigation">
+                <nav id="primary-navigation" class="primary-navigation" role="navigation">
                     <ul aria-label="Primary" role="list" class="nav-list">
                         <li class="nav-item"><a href="#work">Work</a></li>
                         <li class="nav-item"><a href="#about">About</a></li>
@@ -31,8 +29,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="container work">
+    <main role="main">
+        <section class="container work" role="region" aria-label="Four case studies of Leo Osborne's work.">
             <header class="heading">
                 <h1 class="fs-h1 fw-semi-bold text-primary-850">Portfolio</h1>
                 <p class="fs-body ff-body fw-regular">
@@ -57,7 +55,7 @@
                             User Research and Redesign of web portal Minimum Viable Product for StructuRight®
                         </p>
                         <div class="btn-box">
-                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study 1</button>
                         </div>
                         
                     </div>
@@ -76,7 +74,7 @@
                             Design of iOS App MVP for StructuRight® 
                         </p>
                         <div class="btn-box">
-                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study 2</button>
                         </div>
                     </div>
                 </article>
@@ -94,7 +92,7 @@
                             Custom Figma Design System for StructuRight®
                         </p>
                         <div class="btn-box">
-                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study 3</button>
                         </div>
                     </div>
                 </article>
@@ -115,13 +113,13 @@
                             User Experience Research, Web Dev and Backend Architecture build-out of Juniata College’s Content Management System 
                         </p>
                         <div class="btn-box">
-                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study</button>
+                            <button class="btn-primary fs-btn-lg bg-primary-500 text-neutral-100">Read Case Study 4</button>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="container-about-contact">
+        <section class="container-about-contact" role="region" aria-label="Information about Leo Osborne and how to Contact him.">
             <article class="about">
                 <h2 class="fs-h2 fw-semi-bold text-primary-850"><a id="about">About</a></h2>     
                         <p class="info-text fs-body ff-body fw-regular "> Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus.</p>
@@ -131,25 +129,31 @@
                             Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus.</p>
                         <p class="fw-bold info-links"> <strong>Print / Save Resume</strong></p>   
             </article>             
-            <aside class="contact">
+            <aside class="contact" role="complementary" aria-label="Contact form">
                 <h2 class="fs-h2 fw-semi-bold text-primary-850"><a id="contact">Contact</a></h2>                  
-                    <form class="contact-form">
-                        <input required type="text" autocomplete="off" placeholder="Name" class="contact-form-input" 
+                    <form class="contact-form" role="form">
+                        <label for="name">Name <span class="red">(required)</span></label>
+                        <input required id="name" type="text" autocomplete="off" placeholder="Name" class="contact-form-input" name="name"
                         />
-                        <input required type="email" autocomplete="off" placeholder="Email" class="contact-form-input" pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9._+-]+\.[a-z]{2,}" id="email" title="Must be a valid email addess"
+                        <label for="email">Email <span class="red">(required)</span></label>
+                        <input required id="email" type="email" autocomplete="off" placeholder="Email" class="contact-form-input" pattern="[a-zA-Z0-9._+-]+@[a-zA-Z0-9._+-]+\.[a-z]{2,}" title="Must be a valid email addess"                        
                         />
-                        <input required type="text" autocomplete="off" placeholder="Subject" class="contact-form-input" 
+                        <label for="subject">Subject </label>
+                        <input id="subject" required type="text" autocomplete="off" placeholder="Subject" class="contact-form-input" name="subject"
                         />
-                        <textarea required name="Message" placeholder="Message" class="contact-form-input contact-form-textarea"></textarea>
+                        <label for="message">Message <span class="red">(required)</span></label>
+                        <textarea id="message" required name="Message" placeholder="Message" class="contact-form-input contact-form-textarea" name="message"></textarea>
                         <input type="submit" class="btn-primary" value="Send Request"
                         />
                     </form>
                     <p class="fw-bold info-links"> <strong>Email Link</strong></p>
                     <p class="fw-bold info-links"> <strong>LinkedIn Link</strong></p>
+                    <p class="fw-bold info-links"> <strong>Phone</strong></p>
+                    <p class="fw-bold info-links"> <strong>Text</strong></p>
             </aside>
         </section>
     </main>
-    <footer class="container">
+    <footer class="container" role="contentinfo">
         <p>©LeoCast 2023 | email: <a href=" leo@leocast.com ">leo@leocast.com</a> </p>
         <p class="credits"><a href="https://unsplash.com/">Images by</a>: Amy Hirschi, Devin Pickell, Kelly Sikkema and Tran Mau Tri Tam</p>
     </footer>

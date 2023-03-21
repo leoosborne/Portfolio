@@ -355,6 +355,11 @@ Contact Form
   display: none;
 }
 
+.red {
+  color: red;
+  font-size: var(--fs-200);
+}
+
 /****************
 Text Blocks
 ****************/
@@ -504,13 +509,12 @@ Media Queries
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-auto-rows: minmax(200px, auto);
-    gap: 1rem;
+    gap: 3rem;
   }
 
-  /* .lower {  
-    display: flex;
-    align-items: flex-start;
-  } */
+  .contact > h2 {
+    margin-bottom: .5rem;
+  }
 
   .contact-form {
     display: flex;
@@ -522,7 +526,7 @@ Media Queries
   input,
   textarea {
     padding: .5rem 0 .5rem .5rem;
-    margin: .5rem 0 .5rem .5rem;
+    margin: .25rem 0  1.25rem .5rem;
   }
 
   textarea {
