@@ -459,10 +459,6 @@ Media Queries
     background-image: url(img/icon-close.png);
   }
 
-  .case-study img {
-    width: 475px;
-  }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -587,6 +583,7 @@ Utility Classes
 .bg-primary-50 { background-color: var(--clr-primary-50); }
 .bg-primary-100 { background-color: var(--clr-primary-100); }
 .bg-primary-500 { background-color: var(--clr-primary-500); }
+.bg-primary-800 { background-color: var(--clr-primary-800); }
 .bg-primary-850 { background-color: var(--clr-primary-850); }
 
 .bg-secondary-500 { background-color: var(--clr-secondary-500); }
