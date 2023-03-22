@@ -269,16 +269,13 @@ Case-Study Cards
 }
 
 .case-study img {
-  z-index: 0;
   overflow: hidden;
   border-radius: 1rem 1rem 0 0;
-  height: 10rem;
   object-fit: cover;
-  object-position: 35%;
   background-color: var(--clr-neutral-100);
   filter: var(--drop-shadow);
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .case-study-info-wrap {
@@ -460,6 +457,10 @@ Media Queries
   
   .mobile-nav-toggle[aria-expanded=true] {
     background-image: url(img/icon-close.png);
+  }
+
+  .case-study img {
+    width: 475px;
   }
 
 }
