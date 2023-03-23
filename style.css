@@ -195,11 +195,13 @@ Navigation
   line-height: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .03rem;
+  list-style-type: none;
   
 }
 
 .nav-item a {
   text-decoration: none;
+
   color: var(--text-primary-850);
   padding: .5rem;
 }
@@ -218,8 +220,6 @@ Navigation
 /****************
 Typography
 ****************/
-
-
 
 .heading > h1, 
 .heading > h2 {
