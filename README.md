@@ -20,7 +20,7 @@ Portfolio projects will likely include:
 3) Easily take the next steps to get in touch with me.
 
 **Features:** [ the four required features project will use ]
-1) Create fully accessible responsive menu with CSS and HTML.
+1) Create fully accessible responsive menu with CSS, HTML and JavaScript.
 2) Obtain PageSpeed Insights with a score of 80 or better.
 3) Run an accessibility check, fix any issues and document process in the final README.md.
 4) Animate all buttons and the mobile menu.
@@ -32,4 +32,21 @@ Portfolio projects will likely include:
 * Small Mobile prototype and content wireframe: https://bit.ly/41EMupN  
 * Content wireframes and content spreadsheet located in "research" directory in GitHub repo: https://github.com/leoosborne/Portfolio
 
-**Accessibility Check:** [ To Come ]
+
+**Accessibility Check:** 
+Mobile: 
+https://pagespeed.web.dev/analysis/https-leoosborne-github-io-Portfolio/5eu2mrqjzt?form_factor=mobile
+
+Desktop:
+https://pagespeed.web.dev/analysis/https-leoosborne-github-io-Portfolio/5eu2mrqjzt?form_factor=desktop
+
+**HTML Validator**
+
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fleoosborne.github.io%2FPortfolio%2F
+
+**Special Instructions**
+* Github Pages site: https://leoosborne.github.io/Portfolio/
+
+* The Javascript Hamburger Menu uses an @media screen (max-width: 490px), which is too small to see by resizing the screen on a desktop view. Take a look in the dev tools to see the menu functionality. 
+
+* You can also load the Github Pages URL on your phone, but the menu doesn't work as the main.js doesn't load (static files only).
