@@ -6,7 +6,7 @@
   --clr-primary-400: hsl(208, 27%, 63%);
   --clr-primary-500: hsl(208, 27%, 58%);
   --clr-primary-600: hsl(208, 27%, 48%);
-  --clr-primary-700: hsl(227, 27%, 37%);
+  --clr-primary-700: hsl(208, 27%, 37%);
   --clr-primary-800: hsl(208, 27%, 29%);
   --clr-primary-850: hsl(208, 45%, 15%);
   --clr-primary-900: hsl(208, 27%, 9%);
@@ -162,25 +162,25 @@ general styling
   font-weight: var(--fw-bold);
   font-size: var(--fs-button);
   line-height: 1;
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-accent-400);
+  color: var(--clr-primary-500);
+  background: var(--clr-primary-500);
   box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
 }
 /** FIX ALL OF THESE!!! ADD THE HOVER STATES, ETC. **/
 .button[data-type="inverted"] {
-  background-color: var(--clr-primary-300);
-  color: var(--clr-primary-700);
-}
-
-.button:hover,
-.button:focus-visible {
   background-color: var(--clr-primary-500);
+  color: var(--clr-primary-500);
 }
 
-.button[data-type="inverted"]:hover,
-.button[data-type="inverted"]:focus-visible {
-  background-color: var(--clr-primary-200);
-  color: var(--clr-primary-500);
+.button:hover
+/* .button:focus-visible */{
+  background-color: var(--clr-primary-900);
+}
+
+.button[data-type="inverted"]:hover
+/* .button[data-type="inverted"]:focus-visible */ {
+  background-color: var(--clr-primary-900); 
+  color: var(--clr-primary-900);
 }
 
 /****************
@@ -232,7 +232,7 @@ Navigation
 
 .nav-item a {
   text-decoration: none;
-  color: var(--text-primary-850)
+  color: var(--text-primary-850);
 }
 
 /****************
@@ -252,7 +252,12 @@ Typography
 .heading > h2 {
   font-size: 2.25rem;
   padding-top: 1rem;
-  line-height: auto;
+}
+
+h2 > a:link,
+h2 > a:visited {
+  color: var(--clr-primary-850);
+  text-decoration: none;
 }
 
 /****************
@@ -334,14 +339,15 @@ button {
   border-radius: .75rem;
   text-transform: uppercase;
   margin: 1.5rem;
+  background-color: var(--clr-primary-600);
 }
 
 .btn-primary:hover {
-  box-shadow: 1px 1px 1px #456077;
+  box-shadow: 2px 2px 1px var(--clr-neutral-300);
 }
 
 .btn-primary:active {
-  box-shadow: inset 2px 2px 2px #2C3E4D;
+  box-shadow: inset 2px 2px 1px var(--clr-primary-700);
 }
 
 /****************
@@ -433,7 +439,7 @@ Media Queries
 
   .nav-list a:hover,
   .nav-list a:focus {
-      color: hsl(208, 27%, 58%); /**fix these styles - choose colors from figma prototype, including focus (orange comes from kevin.css)**/
+      color: var(--clr-primary-500); /**fix these styles - choose colors from figma prototype, including focus (orange comes from kevin.css)**/
   }
   
   .primary-navigation[data-visible] {
@@ -524,6 +530,8 @@ Media Queries
   textarea {
     padding: .5rem 0 .5rem .5rem;
     margin: .25rem 0  1.25rem .5rem;
+    border: var(--clr-primary-600) solid 0.063rem;
+    border-radius: 0.5rem;
   }
 
   textarea {
@@ -583,6 +591,8 @@ Utility Classes
 .bg-primary-50 { background-color: var(--clr-primary-50); }
 .bg-primary-100 { background-color: var(--clr-primary-100); }
 .bg-primary-500 { background-color: var(--clr-primary-500); }
+.bg-primary-600 { background-color: var(--clr-primary-600); }
+.bg-primary-700 { background-color: var(--clr-primary-700); }
 .bg-primary-800 { background-color: var(--clr-primary-800); }
 .bg-primary-850 { background-color: var(--clr-primary-850); }
 
