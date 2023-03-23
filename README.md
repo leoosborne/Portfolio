@@ -20,10 +20,10 @@ Portfolio projects will likely include:
 3) Easily take the next steps to get in touch with me.
 
 **Features:** [ the four required features project will use ]
-1) Create fully accessible responsive menu with CSS, HTML and JavaScript.
+1) Create an accessible, responsive menu with CSS, HTML and JavaScript.
 2) Obtain PageSpeed Insights with a score of 80 or better.
 3) Run an accessibility check, fix any issues and document process in the final README.md.
-4) Animate all buttons and the mobile menu.
+4) Animate a "Thank you" modal for the contact form and a page scroll effect for the top nav buttons
 
 
 **Materials:** [ Links to Figma prototypes, content wireframes and content spreadsheet, typography and colors used in portfolio. (No UX research on this one, but will be included in all projects in the finished portfolio) ]
