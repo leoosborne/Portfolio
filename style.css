@@ -6,22 +6,25 @@ Embedded Fonts
 
 @font-face {
   font-family: 'Plus Jakarta Sans';
-  src: url('./fonts/plusjakartasans-semibold-webfont.woff') format('woff');
+  src: local("'Plus Jakarta Sans' semibold"), local("'Plus Jakarta Sans' semi-bold"), url('./fonts/plusjakartasans-semibold-webfont.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Plus Jakarta Sans';
-  src: url('./fonts/plusjakartasans-bold-webfont.woff') format('woff');
+  src: local("'Plus Jakarta Sans' bold"), url('./fonts/plusjakartasans-bold-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Plus Jakarta Sans';
-  src: url('./fonts/plusjakartasans-regular-webfont.woff') format('woff');
+  src: local("'Plus Jakarta Sans' regular"), url('./fonts/plusjakartasans-regular-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
