@@ -519,7 +519,17 @@ Media Queries
   textarea {
     min-height: 10rem;
   }
-  
+  .submit {
+    cursor: pointer;
+    padding: .75rem 2.313rem;
+    border-radius: .75rem;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem .4rem;
+    width: auto;
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-button);
+  };
 }
 
 
