@@ -1,3 +1,29 @@
+/****************
+Embedded Fonts
+****************/
+
+
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./fonts/plusjakartasans-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./fonts/plusjakartasans-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./fonts/plusjakartasans-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --clr-primary-50: hsl(208, 91%, 97%);
   --clr-primary-100: hsl(208, 75%, 92%);
@@ -31,10 +57,13 @@
   --clr-neutral-800: hsl(227, 13%, 12%);
   --clr-neutral-900: hsl(0 0% 0%);
 
-  --ff-primary: 'Plus Jakarta Sans', 'Open Sans', sans-serif;
+  --ff-regular: 'Plus Jakarta Sans', sans-serif;
+  --ff-semi-bold: 'Plus Jakarta Sans', sans-serif;
+  --ff-bold: 'Plus Jakarta Sans', sans-serif;
 
-  --ff-body: var(--ff-primary);
-  --ff-heading: var(--ff-primary);
+  --ff-primary: var(--ff-regular);
+  --ff-body: var(--ff-regular);
+  --ff-heading: var(--ff-semi-bold);
 
   --fw-regular: 400;
   --fw-semi-bold: 600;
@@ -223,7 +252,6 @@ Typography
 .heading > h1, 
 .heading > h2 {
   font-style: normal;
-  font-weight: 600;
   font-size: 3rem;
   line-height: 3.75rem;
 }
