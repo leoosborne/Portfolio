@@ -325,7 +325,8 @@ button {
   font-size: var(--fs-button);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   box-shadow: 2px 2px 1px var(--clr-neutral-300);
 }
 
@@ -529,7 +530,21 @@ Media Queries
     color: var(--clr-neutral-100);
     font-weight: var(--fw-regular);
     font-size: var(--fs-button);
-  };
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+  }
+
+  .submit:hover,
+  .submit:focus {
+    box-shadow: 2px 2px 1px var(--clr-neutral-300);
+  }
+
+  .submit:active {
+    box-shadow: inset 2px 2px 1px var(--clr-primary-850);
+  }
+
 }
 
 
