@@ -406,10 +406,12 @@ Text Blocks
   padding: .5rem 0 1rem 0;
 }
 
-.info-links a {
-  padding: .25rem 0;
+.info-links a  {
+  display: flex;
   text-decoration: none;
   color: var(--text-primary-850);
+  padding: .85rem 0;
+  margin: .25rem 0 .25rem .6rem;
 }
 
 .info-links:hover a,
