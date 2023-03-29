@@ -60,23 +60,17 @@ Desktop: https://bit.ly/40qJiNk
 * Best Practices: 92
 * SEO: 100
 
+
+**HTML Validator**: Mar 29, 2023
+Validated: https://bit.ly/3G2g3rR
+
+
 **Materials:** Links to Figma prototypes, content wireframes and content spreadsheet, typography and colors used in portfolio. (No UX research on this one, but will be included in all projects in the finished portfolio).
 
 * Large Computer prototype and content wireframe: https://bit.ly/41pgW71
 * Small Mobile prototype and content wireframe: https://bit.ly/41EMupN  
 * Content wireframes and content spreadsheet located in "research" directory in GitHub repo: https://github.com/leoosborne/Portfolio
 
-
-**Accessibility Check:** 
-Mobile: 
-https://pagespeed.web.dev/analysis/https-leoosborne-github-io-Portfolio/5eu2mrqjzt?form_factor=mobile
-
-Desktop:
-https://pagespeed.web.dev/analysis/https-leoosborne-github-io-Portfolio/5eu2mrqjzt?form_factor=desktop
-
-**HTML Validator**
-
-https://validator.w3.org/nu/?doc=https%3A%2F%2Fleoosborne.github.io%2FPortfolio%2F
 
 **Special Instructions**
 * Github Pages site: https://leoosborne.github.io/Portfolio/. * (Note 1: Hamburger menu doesn't work as the main.js doesn't load (static files only)). * (Note 2: PDF was not dislaying on Github Pages site, so it has been commented out for now. Will uncomment once the case studies are complete and site in launched on leocast.com).
