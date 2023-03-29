@@ -38,11 +38,11 @@ Desktop: https://bit.ly/3ZGBtC9
 * Best Practices: 92
 * SEO: 80
 
-1) Under the **Performance** category, there is a recurring issue with Cummulative Layout Shift. If you analyze the page multiple times, you will see different values for this test. I know it is caused by the "case study cards" changing from a single column layout on mobile to a side-by-side layout on 491px+. I got this idea from the starbucks website (I checked; they consistently flunked the Cumulative Layout Shift test by a large margin). You win some and you lose some, I guess. The other big ding was page load speed. I followed the recommendation to use .webp instead of .jpg for the images, and shrunk the size of each image. 
+1) Under the **Performance** category, there is a recurring issue with Cummulative Layout Shift. If you analyze the page multiple times, you will see different values for this test. I know it is caused by the "case study cards" changing from a single column layout on mobile to a side-by-side layout on 491px+. I got this idea from the starbucks website (I checked; they consistently flunked the Cumulative Layout Shift test by a large margin). You win some and you lose some, I guess. The other big ding was page load speed. I followed the recommendation to use .webp instead of .jpg for the images, and shrunk the size of each image. There was also a hit from the site cache lasting only 10 seconds, which will be remedied on the server when site goes live.
 
 2) **Accessibility** seemed pretty good (Following the guidelines from Arizona State University IT Department (https://bit.ly/3TS21yI)). Actually, many of those suggestions were overkill; the HTML checker recommended I strip out about half of those, which I did. 
 
-3) Under the **Best Practices** category there were some issues with the server. Biggest problem on performance comes from using Github Pages: javascript doesn’t load as it is a static page. The other ding was the site cache lasting only 10 seconds. Both of these issues will be resolved when site goes live. 
+3) Under the **Best Practices** category there were some issues with the server. Biggest problem on performance comes from using Github Pages: javascript doesn’t load as it is a static page. This will be resolved when site goes live. 
 
 4) SEO was pretty easey to fix. I was missing a "meta description" for the site and the site was not crawlable by search bots. Added two tags in Head which fixed it.
 
