@@ -46,23 +46,23 @@ Desktop: https://bit.ly/3ZGBtC9
 
 4) SEO was pretty easey to fix. I was missing a "meta description" for the site and the site was not crawlable by search bots. Added two tags in Head which fixed it.
 
-**Page Speed Results After Fixes**: March 29 2023
+**Page Speed Results After Fixes**: March 30, 2023
 
-Mobile: https://bit.ly/40pU5HH
-* Performance: 99
+Mobile: https://bit.ly/40L2x42
+* Performance: 90
 * Accessibility: 100
-* Best Practices: 92
-* SEO: 98
+* Best Practices: 100
+* SEO: 100
 
-Desktop: https://bit.ly/40qJiNk
+Desktop: https://bit.ly/3ZvnKhk
 * Performance: 100
 * Accessibility: 100
-* Best Practices: 92
+* Best Practices: 100
 * SEO: 100
 
 
-**HTML Validator**: Mar 29, 2023
-Validated: https://bit.ly/3G2g3rR
+**HTML Validator**: Mar 30, 2023
+Validated: https://bit.ly/3KiuDy8
 
 
 **Materials:** Links to Figma prototypes, content wireframes and content spreadsheet, typography and colors used in portfolio. (No UX research on this one, but will be included in all projects in the finished portfolio).
