@@ -42,7 +42,7 @@ Desktop: https://bit.ly/3ZGBtC9
 
 2) **Accessibility** seemed pretty good (Following the guidelines from Arizona State University IT Department (https://bit.ly/3TS21yI)). Actually, many of those suggestions were overkill; the HTML checker recommended I strip out about half of those, which I did. 
 
-3) Under the **Best Practices** category there were some issues with the server. Biggest problem on performance comes from using Github Pages: javascript doesn’t load as it is a static page. This will be resolved when site goes live. 
+3) Under the **Best Practices** category there were some issues with main.js not loading properly. I thought this was an issue from using Github Pages only loading static files, but it turned out that javascript wasn’t loading because I was pointing it to the file folder root and not the local root. Brian Dickens showed me the error, I corrected it and all works as expected now. Thanks Brian.
 
 4) SEO was pretty easey to fix. I was missing a "meta description" for the site and the site was not crawlable by search bots. Added two tags in Head which fixed it.
 
@@ -73,7 +73,6 @@ Validated: https://bit.ly/3KiuDy8
 
 
 **Special Instructions**
-* Github Pages site: https://leoosborne.github.io/Portfolio/. * (Note 1: Hamburger menu doesn't work as the main.js doesn't load (static files only)). * (Note 2: PDF was not dislaying on Github Pages site, so it has been commented out for now. Will uncomment once the case studies are complete and site in launched on leocast.com).
 
 * The Javascript Hamburger Menu uses an @media screen (max-width: 490px), which is too small to see by resizing the screen on a desktop view. Resize to 490 or below in the dev tools to see the menu functionality. 
 
