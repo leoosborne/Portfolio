@@ -8,7 +8,7 @@ Portfolio projects will likely include:
 * Juniata.edu case study: Case Study, Wireframe Prototype and link to site
 
 
-**Project Brief:** My portfolio needs a refresh. This simple portfolio website will highlight my front-end dev and UX/UL design skills and experience. The project will meet the standards for semantic HTML and WCAG Level AA accessibility. The mobile first layout will be styled with flexbox and grid and use media queries for the following viewport sizes: 
+**Project Brief:** My portfolio needs a refresh. This simple portfolio website will highlight my front-end dev and UX/UI design skills and experience. The project will meet the standards for semantic HTML and WCAG Level AA accessibility. The mobile first layout will be styled with flexbox and grid and use media queries for the following viewport sizes: 
 * Mobile: Less than 490px
 * Tablet, laptop and desktop: Greater than 491px
 
